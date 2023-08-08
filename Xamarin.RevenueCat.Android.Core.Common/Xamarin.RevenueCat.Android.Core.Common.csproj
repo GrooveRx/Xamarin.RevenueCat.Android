@@ -3,7 +3,7 @@
   <PropertyGroup>
     <IsPackable>true</IsPackable>
     <PackageId>Xamarin.RevenueCat.Android.Core.Common</PackageId>
-    <Version>5.3.0.3</Version>
+    <Version>6.5.0.1</Version>
     <Description>Contains bindings for https://docs.revenuecat.com/docs/android</Description>
     <Authors>Christian Kapplmüller</Authors>
     <Company>fun.music IT GmbH</Company>
@@ -57,19 +57,21 @@
   <ItemGroup>
     <TransformFile Include="Transforms\Metadata.xml" />
   </ItemGroup>
-  <ItemGroup>
-    <LibraryProjectZip Include="Jars\purchases-core-common-5.3.0.aar" />
-    <JavaSourceJar Include="Jars\purchases-core-common-5.3.0-sources.jar" />
-  </ItemGroup>
+    <ItemGroup>
+        <LibraryProjectZip Include="Jars\purchases-core-common-6.5.0.aar" />
+        <JavaSourceJar Include="Jars\purchases-core-common-6.5.0-sources.jar" />
+    </ItemGroup>
   <ItemGroup>
     <PackageReference Include="NuGet.Build.Tasks.Pack" Version="6.2.1">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="org.jetbrains.kotlin.kotlin.parcelize.runtime" Version="1.5.20.1" />
-    <PackageReference Include="Xamarin.Kotlin.StdLib" Version="1.4.20" />
-    <PackageReference Include="Xamarin.AndroidX.Core.Core.Ktx" Version="1.5.0" />
-    <PackageReference Include="Xamarin.Android.Google.BillingClient" Version="4.0.0" />
+        <PackageReference Include="Xamarin.AndroidX.Lifecycle.Runtime" Version="2.5.0" />
+        <PackageReference Include="Xamarin.Google.Crypto.Tink.Android" Version="1.8.0.1" />
+    <PackageReference Include="Xamarin.Kotlin.StdLib" Version="1.7.0" />
+    <PackageReference Include="Xamarin.AndroidX.Core.Core.Ktx" Version="1.8.0.1" />
+    <PackageReference Include="Xamarin.Android.Google.BillingClient" Version="5.1.0.1" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Xamarin.RevenueCat.Android.Core.Public\Xamarin.RevenueCat.Android.Core.Public.csproj">

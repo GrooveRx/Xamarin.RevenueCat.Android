@@ -3,7 +3,7 @@
   <PropertyGroup>
     <IsPackable>true</IsPackable>
     <PackageId>Xamarin.RevenueCat.Android.Core.Feature.Subscriber.Attributes</PackageId>
-    <Version>5.3.0.3</Version>
+    <Version>6.5.0.1</Version>
     <Description>Contains bindings for https://docs.revenuecat.com/docs/android</Description>
     <Authors>Christian Kapplmüller</Authors>
     <Company>fun.music IT GmbH</Company>
@@ -54,12 +54,10 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <LibraryProjectZip Include="Jars\purchases-core-feature-subscriber-attributes-5.3.0.aar" />
-  </ItemGroup>
-  <ItemGroup>
-    <JavaSourceJar Include="Jars\purchases-core-feature-subscriber-attributes-5.3.0-sources.jar" />
-  </ItemGroup>
+<ItemGroup>
+        <LibraryProjectZip Include="Jars\purchases-core-feature-subscriber-attributes-6.5.0.aar" />
+        <JavaSourceJar Include="Jars\purchases-core-feature-subscriber-attributes-6.5.0-sources.jar" />
+    </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Xamarin.RevenueCat.Android.Core.Common\Xamarin.RevenueCat.Android.Core.Common.csproj">
       <Project>{A1F50E80-9FCE-419A-9B0F-3AB3B3ECA7C7}</Project>
@@ -85,8 +83,9 @@
     </PackageReference>
     <PackageReference Include="org.jetbrains.kotlin.kotlin.parcelize.runtime" Version="1.5.20.1" />
     <PackageReference Include="Xamarin.AndroidX.AppCompat" Version="1.2.0" />
-    <PackageReference Include="Xamarin.AndroidX.Core.Core.Ktx" Version="1.5.0" />
-    <PackageReference Include="Xamarin.Kotlin.StdLib" Version="1.4.20" />
+	      <PackageReference Include="Xamarin.AndroidX.Core.Core.Ktx" Version="1.8.0.1" />
+      <PackageReference Include="Xamarin.AndroidX.Lifecycle.Runtime" Version="2.5.0" />
+      <PackageReference Include="Xamarin.Kotlin.StdLib" Version="1.7.0" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.Bindings.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
